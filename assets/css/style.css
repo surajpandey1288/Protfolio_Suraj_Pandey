@@ -641,6 +641,11 @@ header a.logo img {
     margin: 0 auto -80px auto;
     top: 100px;
 }
+.slider-image.cus_img
+{
+    top: 35px;
+    margin: 0;
+}
 
 .slider-image img {
     width: 100%;
