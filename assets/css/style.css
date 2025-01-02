@@ -630,11 +630,19 @@ header a.logo img {
    Banner
 ====================================== */
 .slider-area{
+    /* background-image: url("../images/banner.jpg"); */
+    height: 100vh;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+/* .hero
+{
     background-image: url("../images/banner.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
+
 
 .slider-image {
     position: relative;
@@ -643,9 +651,14 @@ header a.logo img {
 }
 .slider-image.cus_img
 {
-    top: 35px;
+    /* top: 35px; */
     margin: 0;
 }
+/* .slider-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+} */
 
 .slider-image img {
     width: 100%;
@@ -804,7 +817,13 @@ header a.logo img {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.hero
+{
+    background-image: url("../images/banner.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .skill {
     text-transform: uppercase;
     font-weight: normal;
@@ -1756,7 +1775,7 @@ header a.logo img {
     .h1, h1 {font-size: 60px;}
     section {padding: 7.5rem 0;}
     html {scroll-behavior: smooth;}
-    .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
+    .hero, .slider-area, .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
 
     /* Side Nav */
     .side-nav .navbar-nav .nav-link {
@@ -1813,7 +1832,7 @@ header a.logo img {
     .h3, h3 {font-size: 32px;}
     section {padding: 7.5rem 0;}
     html {scroll-behavior: smooth;}
-    .slider-area, .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
+    .slider-area, .hero, .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
 
     /* Side Nav */
     .side-menu .side-nav .navbar-nav li a {
@@ -1860,6 +1879,9 @@ header a.logo img {
     .contact-btn .btn {
         font-size: 16px;
     }
+    .slider-image img {
+        max-width: 300px;
+    }
 }
 @media screen and (max-width: 767px) {
 
@@ -1870,9 +1892,13 @@ header a.logo img {
     .h2, h2 {font-size: 36px;}
     .h3, h3 {font-size: 24px;}
     p {font-size: 14px;line-height: 20px;}
-    .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
+    .hero, .slider-area, .skills, .timeline-bg, .portfolio-bg, .testimonial-bg, .contact-bg {height: auto;}
 
     /* Nav */
+    .hero
+    {
+        padding-top:0 ;
+    }
     header a.logo img {
         max-width: 60px;
     }
@@ -1909,20 +1935,26 @@ header a.logo img {
     }
 
     /* Slider */
+    .slider-image.cus_img
+    {
+        top: 0;
+    }
     .slider-area .slider-content {
         margin-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-	.slider-image {
+	/* .slider-image {
 		top: 0 !important;
-	}
+	} */
     .content-para {
         padding: 0 10px;
         font-size: 12px;
         line-height: 22px;
     }
-    .image-order {
+    /* .image-order {
         order: 2;
-    }
+    } */
     .animated-circle {
         display: none;
     }
@@ -1967,6 +1999,10 @@ header a.logo img {
     /* Contact */
     .contact-form .form-control {
         font-size: 14px;
+    }
+    .slider-text
+    {
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 575.98px) {
